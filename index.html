@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Brush Co. - Exquisite Romanian Craftsmanship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color1: #93A6BF;
+            --color2: #303D56;
+            --color3: #6E8C58;
+            --color4: #A65E44;
+            --color5: #403536;
+        }
+
+        body {
+            font-family: 'Klein', bold;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: var(--color2);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Klein', bold;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2.5rem;
+        }
+
+        nav ul li a {
+            color: var(--color2);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul li a:hover {
+            color: var(--color4);
+        }
+
+        main {
+            margin-top: 5rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Klein', bold;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            color: var(--color3);
+        }
+
+        .hero {
+            background-color: var(--color1);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color4);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: var(--color5);
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .product {
+            background-color: #F8F8F8;
+            border-radius: 10px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product h3 {
+            color: var(--color4);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        #about, #contact {
+            background-color: #F8F8F8;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        footer {
+            background-color: var(--color2);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Artisan Brush Co.</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Exquisite Romanian Craftsmanship</h1>
+                <p>Elevating your artistic expression with meticulously crafted brushes since 1974</p>
+                <a href="#products" class="cta-button">Explore Our Collection</a>
+            </div>
+        </section>
+
+        <section id="products" class="container">
+            <h2>Our Premium Collections</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Artist Series Brushes" class="product-image">
+                    <div class="product-info">
+                        <h3>Artist Series</h3>
+                        <p>Precision-engineered brushes for discerning artists, delivering unparalleled control and expression.</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Home Essentials Brushes" class="product-image">
+                    <div class="product-info">
+                        <h3>Home Essentials</h3>
+                        <p>Elegant and durable household brushes, combining functionality with timeless design.</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Specialty Collection Brushes" class="product-image">
+                    <div class="product-info">
+                        <h3>Specialty Collection</h3>
+                        <p>Unique brushes crafted for specific applications, pushing the boundaries of traditional brush-making.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+         <section id="about">
+            <div class="container">
+                <h2>Our Heritage</h2>
+                <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/320334695_1585046205269806_6581112457707595189_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o0D08j0GYcoQ7kNvgFeHr32&_nc_ht=scontent-lga3-2.xx&oh=00_AYCGfTbrklzv78Bn1JNhN0JN_sc2-ZRi6E7xVkwPdex_gQ&oe=66DA5E6E" style="width: 500px; height: auto;" alt="Specialty Collection Brushes" class="product-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Alexandru_Papiu-Ilarian.jpg/220px-Alexandru_Papiu-Ilarian.jpg" style="width: 200px; height: auto;" alt="Specialty Collection Brushes" class="product-image">
+
+
+                <p>For three generations, our family has been perfecting the art of brush-making in the heart of Romania. We seamlessly blend time-honored techniques with cutting-edge innovation to create tools of unparalleled quality, empowering artists and homeowners alike to achieve excellence in their pursuits.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Connect With Us</h2>
+                <p>Email: info@artisanbrush.ro</p>
+                <p>Phone: +40 123 456 789</p>
+                <p>Studio: 123 Atelier Street, Bucharest, Romania</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Artisan Brush Co. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
